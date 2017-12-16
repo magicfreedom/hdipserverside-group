@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'home/index'
+
   get 'cart/index'
+  
+  root to: "hom#index"
 
   resources :items
   
