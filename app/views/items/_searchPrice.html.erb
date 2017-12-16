@@ -1,0 +1,8 @@
+<h2>Happy Prices</h2>
+<%= form_tag("/search", :method => "post") do %>
+<%= label_tag(:min, "Minimum") %>
+<%= number_field_tag(:min) %>
+<%= label_tag(:max, "Maximum") %>
+<%= number_field_tag(:max) %>
+<%= submit_tag("Search") %>
+<% end %>

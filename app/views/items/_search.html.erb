@@ -1,0 +1,6 @@
+<h2>Happy Products</h2>
+<%= form_tag("/search", :method => "post") do %>
+<%= label_tag(:q, "Search By Keyword") %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Search") %>
+<% end %>

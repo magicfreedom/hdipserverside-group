@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @item.author %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @item.subject %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @item.price %>
+</p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @item.isbn %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @item.level %>
+</p>
+
+<p>
+  <%= image_tag(@item.image_url, :height => '500') %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @item.category %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @item.colour %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
+
+<%= link_to "Add To Cart", "/cart/#{@item.id}" %> |
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

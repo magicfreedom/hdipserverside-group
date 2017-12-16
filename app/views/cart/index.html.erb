@@ -1,0 +1,16 @@
+<h2>Not too expensive</h2>
+<% if @cart != nil %> 
+    <% total_price = 0 %>
+
+    <% @cart.each do |item_id, amount| %>
+        <% item = Item.find(item_id) %>
+        <p><%= item.title %></p>
+        <p>Item Price:<%= item.price %></p>
+        <p>item Quantity:<%= amount %></p>
+        <p>Price for Item: <%= amount.to_i * item.price %></p>
+        <% total_price +=  amount.to_i * item.price %>
+    <% end %>
+    <p><h2>Total Happy Price</h2> <%= total_price %></p>
+<% else %>
+<p>Your shopping cart is empty</p>
+<% end %>

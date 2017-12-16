@@ -1,0 +1,8 @@
+<h1>Happy Schoolbag Products</h1>
+
+<% @categoryList = Item.select('DISTINCT category') %>
+
+<% @categoryList.each do |category| %>
+    <a href="/category/<%= category.category %>"><%= category.category %></a>
+    <br />
+<% end %>
