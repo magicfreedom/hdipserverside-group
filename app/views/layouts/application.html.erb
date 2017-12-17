@@ -3,25 +3,197 @@
   <head>
     <title>Bag's</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <!--<body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     
-    
     <%= render "items/search" %>
     <%= render "items/searchPrice" %>
-    
-    
-    
     <%= yield %>
     
     <p>Group project by Ke Jia</p>
     <p>Group project by Brian Harkin</p>
-  </body>
+  </body>-->
+  
+<body>
+
+<div id="mainTop1">
+            <ul>
+				<li class="home"><a href="#">Home Page</a></li>
+				<li class="new"><a href="#">New Products</a></li>
+				<li class="specials"><a href="#">Specials</a></li>
+				<li class="account"><a href="#">My Account</a></li>
+				<li class="contacts"><a href="#">Contacts</a></li>
+			</ul>
+            
+            <ul class="logo">
+            	<li><a href="#">home</a></li>
+            </ul>
+</div>
+
+<div id="mainTop2"></div>
+
+<div id="mainTop3">
+<a href="#"><img src="assets/btn_learnmore.jpg" alt="Learn more" width="131" height="26" border="0" /></a>
+
+<ul>
+<li>Choose your language:</li>
+<li class="english"><a href="#">english</a></li>
+<li class="german"><a href="#">german</a></li>
+<li class="spanish"><a href="#">spanish</a></li>
+<li class="bullet"></li>
+</ul>
+
+<ul class="currency">
+<li class="currency_headline">Currencies</li>
+<li class="listmenu"><form action="" method="get"><select name="currency">
+  <option>US Dollar</option>
+  <option>Euro</option>
+</select></form></li>
+</ul>
+
+<ul class="cart">
+<li>0 items</li>
+</ul>
+
+</div>
+
+<div id="mainBody1">
+<ul>
+<li class="head1"></li>
+<li class="head2"></li>
+<li class="head3"></li>
+</ul>
+</div>
+
+<div id="mainBody2">
+<div id="mainBody22">
+<div id="leftPan">
+
+<ul>
+<li><a href="#">New Books</a></li>
+<li><a href="#">Arts &amp; Photography</a></li>
+<li><a href="#">Audiobooks</a></li>
+<li><a href="#">Biography</a></li>
+<li><a href="#">Business &amp; Investing</a></li>
+<li><a href="#">Children</a></li>
+<li><a href="#">Computers &amp; Internet</a></li>
+<li><a href="#">Cooking, Food &amp; Wine</a></li>
+<li><a href="#">Film</a></li>
+<li><a href="#">Health, Mind &amp; Body</a></li>
+<li><a href="#">History</a></li>
+<li><a href="#">Home &amp; Garden</a></li>
+<li><a href="#">Humor, Comics &amp; Pop Culture</a></li>
+</ul>
+</div>
+
+<div id="middlePan">
+  
+  <%= render "items/search" %>
+    <%= render "items/searchPrice" %>
+    <%= yield %>
+
+<!--<div id="prod1">
+<a href="#"><img src="images/img1.jpg" alt="Learn more" border="0" /></a>
+
+<div class="text">
+<a href="#">Eat, Pray, Love</a>
+<p>by Elizabeth Gilbert</p>
+<p><span>(Paperback)</span></p>
+</div>
+
+<ul class="price">
+<li class="old">$ 9,99</li>
+<li class="current">$ 7,59</li>
+</ul>
+
+<ul class="buttons">
+<li class="lmore"><a href="#">learn more</a></li>
+<li class="buy"><a href="#">buy now</a></li>
+</ul>
+
+</div>
+
+<div id="prod2">
+<a href="#"><img src="images/img2.jpg" alt="Learn more" border="0" /></a>
+
+<div class="text">
+<a href="#">My Grandfather's Son</a>
+<p>by Clarence Thomas</p>
+<p><span>(Hardcover)</span></p>
+</div>
+
+<ul class="price">
+<li class="old">$ 15,99</li>
+<li class="current">$ 12,99</li>
+</ul>
+
+<ul class="buttons">
+<li class="lmore"><a href="#">learn more</a></li>
+<li class="buy"><a href="#">buy now</a></li>
+</ul>
+</div>
+
+<div id="prod3">
+<a href="#"><img src="images/img3.jpg" alt="Learn more" border="0" /></a>
+
+<div class="text">
+<a href="#">The Day of Battlet</a>
+<p>by Rick Atkinson</p>
+<p><span>(Hardcover)</span></p>
+</div>
+
+<ul class="price">
+<li class="old">$ 9,50</li>
+<li class="current">$ 8,39</li>
+</ul>
+
+<ul class="buttons">
+<li class="lmore"><a href="#">learn more</a></li>
+<li class="buy"><a href="#">buy now</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="rightPan">-->
+
+<ul>
+<li><a href="#">Shipping &amp; Returns</a></li>
+<li><a href="#">Gift Cards</a></li>
+<li><a href="#">Order Tracking</a></li>
+<li><a href="#">Privacy Notice</a></li>
+<li><a href="#">Conditions of Use</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+
+<p><span>Ea consetetur sadi</span> Dolores et ea consetetur sadi pscing elit consetetur pscing elitr, sed diam nonumy lorem ipsum dolor sed Consetetur <a href="#">| more</a></p>
+
+<a href="#"><img src="assets/ad.jpg" alt="Learn more" border="0" /></a></div>
+
+</div>
+</div>
+
+<div id="mainBody3"></div>
+
+<div id="footer">
+
+<ul>
+<li><a href="#">Specials</a>| </li>
+<li><a href="#">Site Search</a>| </li>
+<li><a href="#">Contact Us</a>| </li>
+<li><a href="#">Create an Account</a>| </li>
+<li class="login"><a href="#">Customer Login</a></li>
+</ul>
+
+<p>Copyright &copy; Your Company Name</p>
+
+</div>
+
+</body>
 </html>
 
